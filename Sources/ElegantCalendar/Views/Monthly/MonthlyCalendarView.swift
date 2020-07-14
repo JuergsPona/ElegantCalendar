@@ -35,7 +35,7 @@ public struct MonthlyCalendarView: View, MonthlyCalendarManagerDirectAccess {
     }
 
     private var monthsList: some View {
-        ElegantVList(manager: calendarManager.pagerManager)
+        ElegantVList(manager: calendarManager.pagerManager, width: CalendarConstants.Monthly.cellWidth)
     }
 
     private var leftAlignedScrollBackToTodayButton: some View {

@@ -17,6 +17,10 @@ struct CalendarConstants {
 
     struct Monthly {
 
+        static let differenceDelta: CGFloat = 15
+        static let cellWidth: CGFloat = screen.width - differenceDelta
+        static let horizontalPadding: CGFloat = cellWidth * 0.045
+
         static let outerHorizontalPadding: CGFloat = horizontalPadding + dayWidth/4
 
         static let topPadding: CGFloat = cellHeight * 0.078
